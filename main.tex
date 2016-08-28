@@ -1,0 +1,281 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abhishek - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (28/8/2016)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+%Forked repository:
+%https://github.com/cruxrebels/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Abhishek}{Agrawal}{ \urlstyle{same}\url{https://cruxrebels.wordpress.com} \\
+\href{mailto:composetoabhishek@gmail.com}{composetoabhishek@gmail.com} | +91-98868-94292
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BPUT Odisha}
+\descript{BTech - Computer Science}
+\location{Jun 2014 | Odisha, India \\ GPA: 7.43/10}
+\sectionsep
+
+
+% \descript{BS in Computer Science}
+% \location{Expected May 2014 | Ithaca, NY}
+% Conc. in Software Engineering \\
+% College of Engineering \\
+% Dean's List (All Semesters) \\
+% \location{ Cum. GPA: 3.92 / 4.0 \\
+% Major GPA: 3.94 / 4.0}
+% \sectionsep
+
+% \subsection{La Martiniere for Boys}
+% \location{Grad. May 2011|  Kolkata, India}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/cruxrebels}{\custombold{cruxrebels}} \\
+LinkedIn:// \href{https://www.linkedin.com/in/ppabhishekagrawal}{\custombold{ppAbhishekAgrawal}} \\
+Quora:// \href{https://www.quora.com/profile/Abhishek-Agrawal-6}{\custombold{Abhishek-Agrawal-6}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLLEGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{College}
+\subsection{Projects}
+Techfest website (2012-14) \\
+Employee Database and \\
+Management Portal (2013) \\
+Document Management \\
+System (2013) \\
+\sectionsep
+
+\subsection{Courses}
+Operating Systems \\
+Data Structures \\
+Analysis of Algorithms \\
+Object Oriented Programming \\
+Software Engineering \\
+Web Fundamentals \\
+%Database Engineering \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+Particle Swarm Optimization \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+C++ \textbullet{} Data Structures \\
+Boost C++ Libraries \\
+\location{Over 500 lines:}
+Python \textbullet{} HTML \textbullet{} CSS \textbullet{}  \LaTeX\ \\
+%\location{Familiar:}
+%PhoneGap \textbullet{} ASP.Net \textbullet{} SQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HOBBIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hobbies}
+Blogging \\
+Physical fitness \\
+Football \textbullet{} Volleyball \textbullet{} Badminton \\
+Acoustic Guitar \\
+Computer Games \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Infosys}
+\descript{| Systems Engineer }
+\location{Feb 2015 – ongoing | Mysore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working in Upstream Research division of world's largest oil \& gas supermajor.
+\item Played an instrumental role in winning client's confidence \& project deal for Infosys by solving two complex engineering problems in 30 days.
+\item My observance at Mysore campus ecosystem led me in identifying the queue problems in food courts and multiplex, which earned me an induction into the Innovation club where I used design thinking to structure a solution prototype.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tekgrid}
+\descript{| Software Engineer }
+\location{Sep 2014 – Feb 2015 | Bangalore, India}
+\begin{tightemize}
+\item Worked on developing a property management solution using test driven development in C\#.Net and modeled the data using MS Dynamics CRM.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Relevance Lab}
+\descript{| Intern}
+\location{Aug 2014 – Sep 2014 | Bangalore, India}
+\begin{tightemize}
+\item Exposed to DevOps and Agile processes. Developed HTML help files and web documentation for JSON code snippets. Learned coding standards.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ProcessMAP}
+\descript{| Summer Intern}
+\location{May 2013 – Aug 2013 | Bhubaneswar, India}
+\begin{tightemize}
+\item Learned about EHS and SaaS. Analyzed and tested the DMS module and suggested improvements. \item Developed an in-house ERP module, employee database and management portal using Microsoft .Net framework and N-tier architecture. Worked on ASP.Net, C\#, SQL Server, HTML and CSS.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Head Undergrad Research}
+% \location{Jan 2014 – Present | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+%Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards and Recognition} 
+\begin{tabular}{|c|c|m{9cm}|}
+\hline 2016 & Infosys & Received client appreciation for going the extra mile and working with multiple teams to meet the business objectives. \\ 
+\hline 2015 & Infosys & Received Spot Award for being most agile in coding and shipping the first deliverables.  \\
+\hline 2012-14 & College & Team Leader and Member of Core team for college's annual techfest. \\
+\hline 2012 & College & Wrote and presented 3 papers each of which won seminar awards and got published. \\
+%\hline 2012 & College & Published and won 3 paper presentation seminar awards. \\
+\hline 2011 & College & Student Coordinator for college's annual techfest. \\
+\hline 2006-08 & School & Class Representative for cultural activities. \\
+\hline 2004-07 & School & Active part of the dramatics society and acted in various Shakespearean stage plays during annual functions. \\
+\hline
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies} 
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
